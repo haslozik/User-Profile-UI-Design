@@ -1,0 +1,180 @@
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap");
+/**/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* menu */
+.menu {
+  float: left;
+  height: 100vh;
+  width: 330px;
+  border-right: 1px solid #eee;
+}
+
+.menu .menu__logo {
+  font-family: "Catamaran";
+  padding: 30px 50px;
+}
+
+.menu .menu__photoContainer {
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Lato";
+}
+
+.menu .menu__photoContainer .menu__photoContent {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #f09c00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .menu__photoContainer .menu__photoContent .menu__logoPhotoImg {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+}
+
+.menu .menu__photoContainer .menu__nicknameUnderPhoto {
+  margin-top: 15px;
+}
+
+.menu .menu__photoContainer .menu__addressUnderPhoto {
+  margin-top: 5px;
+  color: #ccc;
+}
+
+.menu .menu__profileStatistics {
+  padding: 30px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Lato";
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.menu .menu__profileStatistics .menu__profileStatisticItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .menu__profileStatistics .menu__profileStatisticItem .menu__profileStatisticText {
+  font-size: 16px;
+}
+
+.menu .menu__profileStatistics .menu__profileStatisticItem .menu__profileStatisticText--smallerText {
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.menu .menu__menuList {
+  padding-top: 30px;
+  list-style: none;
+  font-family: "Lato";
+  font-weight: 600;
+}
+
+.menu .menu__menuList .menu__menuListItem {
+  padding: 20px;
+  color: #ccc;
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+.menu .menu__menuList .menu__menuListItem:hover {
+  color: #111;
+  border-left: 3px solid red;
+}
+
+.menu .menu__menuList .menu__menuListItem--active {
+  color: #111;
+  border-left: 3px solid red;
+}
+
+.menu .menu__bottomOptions {
+  height: 150px;
+  width: 330px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu .menu__bottomOptions .menu__bottomOptionsItem {
+  width: 30%;
+  height: 60px;
+  background-color: #f3f3f3;
+  color: #ccc;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size-adjust: 20px;
+  cursor: pointer;
+}
+
+.menu .menu__bottomOptions .menu__bottomOptionsItem:hover {
+  color: #111;
+}
+/*# sourceMappingURL=style.css.map */
