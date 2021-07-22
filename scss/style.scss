@@ -8,7 +8,7 @@ $fonts: (
 );
 
 $TextColor: #111;
-$smallerTextColor: #ccc;
+$smallerTextColor: #bbb;
 
 /* *** */
 * {
@@ -17,7 +17,7 @@ $smallerTextColor: #ccc;
     box-sizing: border-box;
 }
 
-/* menu */
+/* menu section */
 .menu {
     float: left;
     height: 100vh;
@@ -143,6 +143,110 @@ $smallerTextColor: #ccc;
             cursor: pointer;
             &:hover {
                 color: $TextColor;
+            }
+        }
+    }
+}
+
+/* profile section */
+.profile {
+    float: left;
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid #eee;
+    font-family: map-get($map: $fonts, $key: first);
+
+    .profile__goBackContainer {
+        display: flex;
+        width: 100%;
+        margin: 41px 0 0 30px;
+        text-align: left;
+        cursor: pointer;
+
+        .fa-long-arrow-alt-left {
+            color: $smallerTextColor;
+            font-size-adjust: 18px;
+            margin-top: 3px;
+        }
+
+        .profile__backText {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .profile__profileImageContainer {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .profile__mainImage {
+            border-radius: 12px;
+            width: 55%;
+        }
+    }
+
+    .profile__mainText {
+        padding: 30px 30px 0 30px;
+    }
+
+    .profile__statistics {
+        margin: 10px 0 0 30px;
+        font-size: 12px;
+    }
+
+    .profile__description {
+        padding: 28px 30px;
+        color: $smallerTextColor;
+        font-size: 15px;
+    }
+
+    .profile__favTags {
+        padding: 0 30px;
+    }
+
+    .profile__favTagsText {
+        color: $smallerTextColor;
+        font-size: 15px;
+        padding: 20px 30px;
+    }
+
+    .profile__favoriteProfiles {
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    
+        .profile__favoriteProfilesItem {
+            height: 60%;
+            margin: 0 8px;
+            width: calc((100%/4) - 16px);
+            border-radius: 7px;
+            
+            &--first {
+                background: url("../img/img3.jpg");
+                background-size: cover;
+            }
+            &--second {
+                background: url("../img/img4.jpg");
+                background-size: cover;
+            }
+            &--third {
+                background: url("../img/img5.jpg");
+                background-size: cover;
+            }
+            &--fourth {
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../img/img6.jpg");
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                cursor: pointer;
             }
         }
     }
