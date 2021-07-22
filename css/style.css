@@ -308,4 +308,72 @@
   color: #fff;
   cursor: pointer;
 }
+
+/* explore section */
+.explore {
+  width: calc(100% - 350px - 330px);
+  float: left;
+}
+
+.explore .explore__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.explore .explore__top .explore__searchbarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  padding: 6px;
+  border-radius: 7px;
+  color: #bbb;
+  background-color: #f3f3f3;
+  width: 40%;
+}
+
+.explore .explore__top .explore__searchbarContainer .explore__searchbarIcon {
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.explore .explore__top .explore__searchbarContainer .explore__searchbarIcon:hover {
+  color: #111;
+}
+
+.explore .explore__top .explore__searchbarContainer .explore__searchbar {
+  width: calc(100% - 40px);
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.explore .explore__top .explore__navbarList {
+  margin-right: 30px;
+}
+
+.explore .explore__top .explore__navbarList .fa-bars {
+  margin-left: 20px;
+}
+
+.explore .explore__top .explore__navbarList .fa-bars, .explore .explore__top .explore__navbarList .fa-bell {
+  color: #bbb;
+  cursor: pointer;
+}
+
+.explore .explore__top .explore__navbarList .fa-bars:hover, .explore .explore__top .explore__navbarList .fa-bell:hover {
+  color: #111;
+}
 /*# sourceMappingURL=style.css.map */
