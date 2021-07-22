@@ -10,7 +10,7 @@ $fonts: (
 $TextColor: #111;
 $smallerTextColor: #ccc;
 
-/**/
+/* *** */
 * {
     padding: 0;
     margin: 0;
@@ -106,11 +106,16 @@ $smallerTextColor: #ccc;
             &:hover {
                 color: $TextColor;
                 border-left: 3px solid red;
+                margin-left: -3px;
             }
 
             &--active {
                 color: $TextColor;
                 border-left: 3px solid red;
+                &:hover {
+                    border-left: 3px solid red;
+                    margin-left: 0px;
+                }
             }
         }
     }
