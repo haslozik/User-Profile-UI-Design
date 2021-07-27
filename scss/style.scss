@@ -225,6 +225,7 @@ $smallerTextColor: #bbb;
             margin: 0 8px;
             width: calc((100%/4) - 16px);
             border-radius: 7px;
+            cursor: pointer;
             
             &--first {
                 background: url("../img/img3.jpg");
@@ -246,7 +247,6 @@ $smallerTextColor: #bbb;
                 align-items: center;
                 justify-content: center;
                 color: #fff;
-                cursor: pointer;
             }
         }
     }
@@ -302,6 +302,40 @@ $smallerTextColor: #bbb;
                 cursor: pointer;
                 &:hover {
                     color: $TextColor;
+                }
+            }
+        }
+    }
+
+    .explore__elementDescription {
+        width: 100%;
+        font-family: map-get($map: $fonts, $key: first);
+
+        .explore__elementDescriptionList {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+
+            .explore__elementDescriptionListItem {
+                margin: 0 30px;
+
+                &--larger {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                .explore__elementDescriptionListItemButton {
+                    outline: none;
+                    border: none;
+                    background: #f7f7f7;
+                    padding: 6px 20px;
+                    border-radius: 12px;
+                    cursor: pointer;
+
+                    &--icon {
+                        margin-left: 13px;
+                    }
                 }
             }
         }
