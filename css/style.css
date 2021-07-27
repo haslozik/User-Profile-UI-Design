@@ -416,4 +416,65 @@
 .explore .explore__elementDescription .explore__elementDescriptionList .explore__elementDescriptionListItem .explore__elementDescriptionListItemButton--icon {
   margin-left: 13px;
 }
+
+.explore .explore__photosContainer {
+  width: calc(100% - 60px);
+  margin: 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.explore .explore__photosContainer .explore__photoItem {
+  width: calc((100% / 5) - 20px);
+  height: 210px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 11px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.explore .explore__photosContainer .explore__photoItem--first {
+  background: url("../img/img8.jpg");
+  background-size: cover;
+}
+
+.explore .explore__photosContainer .explore__photoItem--second {
+  background: url("../img/img9.jpg");
+  background-size: cover;
+}
+
+.explore .explore__photosContainer .explore__photoItem--third {
+  background: url("../img/img10.jpg");
+  background-size: cover;
+}
+
+.explore .explore__photosContainer .explore__photoItem--fourth {
+  background: url("../img/img11.jpg");
+  background-size: cover;
+}
+
+.explore .explore__photosContainer .explore__photoItem--fifth {
+  background: url("../img/img12.jpg");
+  background-size: cover;
+}
+
+.explore .explore__photosContainer .explore__photoItem .explore__photoItemText {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-family: "Lato";
+}
 /*# sourceMappingURL=style.css.map */

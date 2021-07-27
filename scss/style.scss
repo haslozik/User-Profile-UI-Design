@@ -340,6 +340,60 @@ $smallerTextColor: #bbb;
             }
         }
     }
+
+    .explore__photosContainer {
+        width: calc(100% - 60px);
+        margin: 30px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .explore__photoItem {
+            width: calc((100% / 5) - 20px);
+            height: 210px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 11px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &--first {
+                background: url("../img/img8.jpg");
+                background-size: cover;
+            }
+            &--second {
+                background: url("../img/img9.jpg");
+                background-size: cover;
+            }
+            &--third {
+                background: url("../img/img10.jpg");
+                background-size: cover;
+            }
+            &--fourth {
+                background: url("../img/img11.jpg");
+                background-size: cover;
+            }
+            &--fifth {
+                background: url("../img/img12.jpg");
+                background-size: cover;
+            }
+
+            .explore__photoItemText {
+                position: absolute;
+                bottom: 20px;
+                color: #fff;
+                font-family: map-get($map: $fonts, $key: first);
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
 
 
